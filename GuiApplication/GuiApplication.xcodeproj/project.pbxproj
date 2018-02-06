@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		480794D01E885BE6005B89FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480794CF1E885BE6005B89FA /* AppDelegate.swift */; };
+		480794D21E885BE6005B89FA /* CalibrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480794D11E885BE6005B89FA /* CalibrationVC.swift */; };
+		480794D41E885BE6005B89FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 480794D31E885BE6005B89FA /* Assets.xcassets */; };
+		480794D71E885BE6005B89FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 480794D51E885BE6005B89FA /* Main.storyboard */; };
+		480794E21E885BE6005B89FA /* GuiApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480794E11E885BE6005B89FA /* GuiApplicationTests.swift */; };
+		480794ED1E885BE6005B89FA /* GuiApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480794EC1E885BE6005B89FA /* GuiApplicationUITests.swift */; };
+		480795151E88668B005B89FA /* EyeTracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 480795141E88668B005B89FA /* EyeTracker.mm */; };
+		482F97411EC51AA30018CFCE /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482F97401EC51AA30018CFCE /* MainVC.swift */; };
+		489406431EB2508200C32EDB /* FaceDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4894063E1EB2508200C32EDB /* FaceDetector.cpp */; };
+		489406441EB2508200C32EDB /* FlowTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4894063F1EB2508200C32EDB /* FlowTracker.cpp */; };
+		489406451EB2508200C32EDB /* HeadPoseEstimator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 489406401EB2508200C32EDB /* HeadPoseEstimator.cpp */; };
+		489406461EB2508200C32EDB /* HeadTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 489406411EB2508200C32EDB /* HeadTracker.cpp */; };
+		489406471EB2508200C32EDB /* PupilDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 489406421EB2508200C32EDB /* PupilDetector.cpp */; };
+		489406491EB2508A00C32EDB /* GazeMapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 489406481EB2508A00C32EDB /* GazeMapper.cpp */; };
+		4894064D1EB2509000C32EDB /* UtilityFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4894064B1EB2509000C32EDB /* UtilityFunctions.cpp */; };
+		489406591EB2F87600C32EDB /* Profile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 489406581EB2F87600C32EDB /* Profile.cpp */; };
+		48AB7E6D1E89CE2B00E156D7 /* source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48AB7E6C1E89CE2B00E156D7 /* source.cpp */; };
+		48E0CFA71E94B29200EC842D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E0CFA61E94B29200EC842D /* Profile.swift */; };
+		48E0CFAC1E96E82900EC842D /* DemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E0CFA91E96E82900EC842D /* DemoVC.swift */; };
+		48E0CFAD1E96E82900EC842D /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E0CFAA1E96E82900EC842D /* DemoView.swift */; };
+		48E0CFAE1E96E82900EC842D /* GazeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E0CFAB1E96E82900EC842D /* GazeMapper.swift */; };
+		48E3AED21E8BCF190011506C /* CalibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E3AED11E8BCF190011506C /* CalibrationView.swift */; };
+		48E3AEEB1E8D13B70011506C /* Calibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E3AEEA1E8D13B70011506C /* Calibration.swift */; };
+		48F804A91E9171EC006471EF /* NSImage+Mat.mm in Sources */ = {isa = PBXBuildFile; fileRef = 48F804A81E9171EC006471EF /* NSImage+Mat.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		480794DE1E885BE6005B89FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 480794C41E885BE6005B89FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 480794CB1E885BE6005B89FA;
+			remoteInfo = GuiApplication;
+		};
+		480794E91E885BE6005B89FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 480794C41E885BE6005B89FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 480794CB1E885BE6005B89FA;
+			remoteInfo = GuiApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		480794CC1E885BE6005B89FA /* GuiApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuiApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		480794CF1E885BE6005B89FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		480794D11E885BE6005B89FA /* CalibrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrationVC.swift; sourceTree = "<group>"; };
+		480794D31E885BE6005B89FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		480794D61E885BE6005B89FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		480794D81E885BE6005B89FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		480794DD1E885BE6005B89FA /* GuiApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuiApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		480794E11E885BE6005B89FA /* GuiApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuiApplicationTests.swift; sourceTree = "<group>"; };
+		480794E31E885BE6005B89FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		480794E81E885BE6005B89FA /* GuiApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuiApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		480794EC1E885BE6005B89FA /* GuiApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuiApplicationUITests.swift; sourceTree = "<group>"; };
+		480794EE1E885BE6005B89FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		480794FA1E885E57005B89FA /* GuiApplication-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GuiApplication-Bridging-Header.h"; sourceTree = "<group>"; };
+		480795131E88668B005B89FA /* EyeTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyeTracker.h; sourceTree = "<group>"; };
+		480795141E88668B005B89FA /* EyeTracker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EyeTracker.mm; sourceTree = "<group>"; };
+		482F97401EC51AA30018CFCE /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		489406361EB2506600C32EDB /* FaceDetector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = FaceDetector.hpp; path = CppFiles/header/FeatureExtraction/FaceDetector.hpp; sourceTree = "<group>"; };
+		489406371EB2506600C32EDB /* FlowTracker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = FlowTracker.hpp; path = CppFiles/header/FeatureExtraction/FlowTracker.hpp; sourceTree = "<group>"; };
+		489406381EB2506600C32EDB /* HeadPoseEstimator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HeadPoseEstimator.hpp; path = CppFiles/header/FeatureExtraction/HeadPoseEstimator.hpp; sourceTree = "<group>"; };
+		489406391EB2506600C32EDB /* HeadTracker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HeadTracker.hpp; path = CppFiles/header/FeatureExtraction/HeadTracker.hpp; sourceTree = "<group>"; };
+		4894063A1EB2506600C32EDB /* PupilDetector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = PupilDetector.hpp; path = CppFiles/header/FeatureExtraction/PupilDetector.hpp; sourceTree = "<group>"; };
+		4894063B1EB2506D00C32EDB /* GazeMapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = GazeMapper.hpp; path = CppFiles/header/GazeEstimation/GazeMapper.hpp; sourceTree = "<group>"; };
+		4894063D1EB2507500C32EDB /* UtilityFunctions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = UtilityFunctions.hpp; path = CppFiles/header/utils/UtilityFunctions.hpp; sourceTree = "<group>"; };
+		4894063E1EB2508200C32EDB /* FaceDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FaceDetector.cpp; path = CppFiles/src/FeatureExtraction/FaceDetector.cpp; sourceTree = "<group>"; };
+		4894063F1EB2508200C32EDB /* FlowTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FlowTracker.cpp; path = CppFiles/src/FeatureExtraction/FlowTracker.cpp; sourceTree = "<group>"; };
+		489406401EB2508200C32EDB /* HeadPoseEstimator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HeadPoseEstimator.cpp; path = CppFiles/src/FeatureExtraction/HeadPoseEstimator.cpp; sourceTree = "<group>"; };
+		489406411EB2508200C32EDB /* HeadTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HeadTracker.cpp; path = CppFiles/src/FeatureExtraction/HeadTracker.cpp; sourceTree = "<group>"; };
+		489406421EB2508200C32EDB /* PupilDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PupilDetector.cpp; path = CppFiles/src/FeatureExtraction/PupilDetector.cpp; sourceTree = "<group>"; };
+		489406481EB2508A00C32EDB /* GazeMapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GazeMapper.cpp; path = CppFiles/src/GazeEstimation/GazeMapper.cpp; sourceTree = "<group>"; };
+		4894064B1EB2509000C32EDB /* UtilityFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UtilityFunctions.cpp; path = CppFiles/src/utils/UtilityFunctions.cpp; sourceTree = "<group>"; };
+		489406571EB2F86900C32EDB /* Profile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Profile.hpp; path = CppFiles/header/GazeEstimation/Profile.hpp; sourceTree = "<group>"; };
+		489406581EB2F87600C32EDB /* Profile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Profile.cpp; path = CppFiles/src/GazeEstimation/Profile.cpp; sourceTree = "<group>"; };
+		48AB7E6C1E89CE2B00E156D7 /* source.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = source.cpp; path = ../../../../../Library/dlib/dlib/all/source.cpp; sourceTree = "<group>"; };
+		48E0CFA61E94B29200EC842D /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		48E0CFA91E96E82900EC842D /* DemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoVC.swift; path = demo/DemoVC.swift; sourceTree = "<group>"; };
+		48E0CFAA1E96E82900EC842D /* DemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoView.swift; path = demo/DemoView.swift; sourceTree = "<group>"; };
+		48E0CFAB1E96E82900EC842D /* GazeMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GazeMapper.swift; path = demo/GazeMapper.swift; sourceTree = "<group>"; };
+		48E3AED11E8BCF190011506C /* CalibrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalibrationView.swift; sourceTree = "<group>"; };
+		48E3AEEA1E8D13B70011506C /* Calibration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calibration.swift; sourceTree = "<group>"; };
+		48F804A71E9171EC006471EF /* NSImage+Mat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Mat.h"; sourceTree = "<group>"; };
+		48F804A81E9171EC006471EF /* NSImage+Mat.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSImage+Mat.mm"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		480794C91E885BE6005B89FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		480794DA1E885BE6005B89FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		480794E51E885BE6005B89FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		480794C31E885BE6005B89FA = {
+			isa = PBXGroup;
+			children = (
+				48AB7E6C1E89CE2B00E156D7 /* source.cpp */,
+				480794CE1E885BE6005B89FA /* GuiApplication */,
+				480794E01E885BE6005B89FA /* GuiApplicationTests */,
+				480794EB1E885BE6005B89FA /* GuiApplicationUITests */,
+				480794CD1E885BE6005B89FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		480794CD1E885BE6005B89FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				480794CC1E885BE6005B89FA /* GuiApplication.app */,
+				480794DD1E885BE6005B89FA /* GuiApplicationTests.xctest */,
+				480794E81E885BE6005B89FA /* GuiApplicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		480794CE1E885BE6005B89FA /* GuiApplication */ = {
+			isa = PBXGroup;
+			children = (
+				4807951C1E886755005B89FA /* main */,
+				4807951D1E88675F005B89FA /* Helper */,
+				4807951E1E886779005B89FA /* CppFiles */,
+				480794FA1E885E57005B89FA /* GuiApplication-Bridging-Header.h */,
+				480794D31E885BE6005B89FA /* Assets.xcassets */,
+				480794D51E885BE6005B89FA /* Main.storyboard */,
+				480794D81E885BE6005B89FA /* Info.plist */,
+			);
+			path = GuiApplication;
+			sourceTree = "<group>";
+		};
+		480794E01E885BE6005B89FA /* GuiApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				480794E11E885BE6005B89FA /* GuiApplicationTests.swift */,
+				480794E31E885BE6005B89FA /* Info.plist */,
+			);
+			path = GuiApplicationTests;
+			sourceTree = "<group>";
+		};
+		480794EB1E885BE6005B89FA /* GuiApplicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				480794EC1E885BE6005B89FA /* GuiApplicationUITests.swift */,
+				480794EE1E885BE6005B89FA /* Info.plist */,
+			);
+			path = GuiApplicationUITests;
+			sourceTree = "<group>";
+		};
+		4807951C1E886755005B89FA /* main */ = {
+			isa = PBXGroup;
+			children = (
+				480794CF1E885BE6005B89FA /* AppDelegate.swift */,
+				482F97401EC51AA30018CFCE /* MainVC.swift */,
+				48E0CFA61E94B29200EC842D /* Profile.swift */,
+				48E0CFA81E96E7DC00EC842D /* Demo */,
+				48E0CFA51E94947100EC842D /* Calibration */,
+				480795131E88668B005B89FA /* EyeTracker.h */,
+				480795141E88668B005B89FA /* EyeTracker.mm */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		4807951D1E88675F005B89FA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				48F804A71E9171EC006471EF /* NSImage+Mat.h */,
+				48F804A81E9171EC006471EF /* NSImage+Mat.mm */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		4807951E1E886779005B89FA /* CppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				487B76EF1E8FFBF200006471 /* src */,
+				487B76EE1E8FFBED00006471 /* header */,
+			);
+			name = CppFiles;
+			sourceTree = "<group>";
+		};
+		487B76EE1E8FFBED00006471 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				489406301EB2501D00C32EDB /* FeatureExtraction */,
+				489406341EB2504B00C32EDB /* GazeEstimation */,
+				489406351EB2505300C32EDB /* utils */,
+			);
+			name = header;
+			sourceTree = "<group>";
+		};
+		487B76EF1E8FFBF200006471 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				489406311EB2502C00C32EDB /* FeatureExtraction */,
+				489406331EB2504000C32EDB /* GazeEstimation */,
+				489406321EB2503600C32EDB /* utils */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		489406301EB2501D00C32EDB /* FeatureExtraction */ = {
+			isa = PBXGroup;
+			children = (
+				489406361EB2506600C32EDB /* FaceDetector.hpp */,
+				489406371EB2506600C32EDB /* FlowTracker.hpp */,
+				489406381EB2506600C32EDB /* HeadPoseEstimator.hpp */,
+				489406391EB2506600C32EDB /* HeadTracker.hpp */,
+				4894063A1EB2506600C32EDB /* PupilDetector.hpp */,
+			);
+			name = FeatureExtraction;
+			sourceTree = "<group>";
+		};
+		489406311EB2502C00C32EDB /* FeatureExtraction */ = {
+			isa = PBXGroup;
+			children = (
+				4894063E1EB2508200C32EDB /* FaceDetector.cpp */,
+				4894063F1EB2508200C32EDB /* FlowTracker.cpp */,
+				489406401EB2508200C32EDB /* HeadPoseEstimator.cpp */,
+				489406411EB2508200C32EDB /* HeadTracker.cpp */,
+				489406421EB2508200C32EDB /* PupilDetector.cpp */,
+			);
+			name = FeatureExtraction;
+			sourceTree = "<group>";
+		};
+		489406321EB2503600C32EDB /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				4894064B1EB2509000C32EDB /* UtilityFunctions.cpp */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		489406331EB2504000C32EDB /* GazeEstimation */ = {
+			isa = PBXGroup;
+			children = (
+				489406481EB2508A00C32EDB /* GazeMapper.cpp */,
+				489406581EB2F87600C32EDB /* Profile.cpp */,
+			);
+			name = GazeEstimation;
+			sourceTree = "<group>";
+		};
+		489406341EB2504B00C32EDB /* GazeEstimation */ = {
+			isa = PBXGroup;
+			children = (
+				4894063B1EB2506D00C32EDB /* GazeMapper.hpp */,
+				489406571EB2F86900C32EDB /* Profile.hpp */,
+			);
+			name = GazeEstimation;
+			sourceTree = "<group>";
+		};
+		489406351EB2505300C32EDB /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				4894063D1EB2507500C32EDB /* UtilityFunctions.hpp */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		48E0CFA51E94947100EC842D /* Calibration */ = {
+			isa = PBXGroup;
+			children = (
+				480794D11E885BE6005B89FA /* CalibrationVC.swift */,
+				48E3AED11E8BCF190011506C /* CalibrationView.swift */,
+				48E3AEEA1E8D13B70011506C /* Calibration.swift */,
+			);
+			name = Calibration;
+			sourceTree = "<group>";
+		};
+		48E0CFA81E96E7DC00EC842D /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				48E0CFA91E96E82900EC842D /* DemoVC.swift */,
+				48E0CFAA1E96E82900EC842D /* DemoView.swift */,
+				48E0CFAB1E96E82900EC842D /* GazeMapper.swift */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		480794CB1E885BE6005B89FA /* GuiApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 480794F11E885BE6005B89FA /* Build configuration list for PBXNativeTarget "GuiApplication" */;
+			buildPhases = (
+				480794C81E885BE6005B89FA /* Sources */,
+				480794C91E885BE6005B89FA /* Frameworks */,
+				480794CA1E885BE6005B89FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuiApplication;
+			productName = GuiApplication;
+			productReference = 480794CC1E885BE6005B89FA /* GuiApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		480794DC1E885BE6005B89FA /* GuiApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 480794F41E885BE6005B89FA /* Build configuration list for PBXNativeTarget "GuiApplicationTests" */;
+			buildPhases = (
+				480794D91E885BE6005B89FA /* Sources */,
+				480794DA1E885BE6005B89FA /* Frameworks */,
+				480794DB1E885BE6005B89FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				480794DF1E885BE6005B89FA /* PBXTargetDependency */,
+			);
+			name = GuiApplicationTests;
+			productName = GuiApplicationTests;
+			productReference = 480794DD1E885BE6005B89FA /* GuiApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		480794E71E885BE6005B89FA /* GuiApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 480794F71E885BE6005B89FA /* Build configuration list for PBXNativeTarget "GuiApplicationUITests" */;
+			buildPhases = (
+				480794E41E885BE6005B89FA /* Sources */,
+				480794E51E885BE6005B89FA /* Frameworks */,
+				480794E61E885BE6005B89FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				480794EA1E885BE6005B89FA /* PBXTargetDependency */,
+			);
+			name = GuiApplicationUITests;
+			productName = GuiApplicationUITests;
+			productReference = 480794E81E885BE6005B89FA /* GuiApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		480794C41E885BE6005B89FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Kevin Bai";
+				TargetAttributes = {
+					480794CB1E885BE6005B89FA = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = KPK2Y4A48T;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					480794DC1E885BE6005B89FA = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = KPK2Y4A48T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 480794CB1E885BE6005B89FA;
+					};
+					480794E71E885BE6005B89FA = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = KPK2Y4A48T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 480794CB1E885BE6005B89FA;
+					};
+				};
+			};
+			buildConfigurationList = 480794C71E885BE6005B89FA /* Build configuration list for PBXProject "GuiApplication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 480794C31E885BE6005B89FA;
+			productRefGroup = 480794CD1E885BE6005B89FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				480794CB1E885BE6005B89FA /* GuiApplication */,
+				480794DC1E885BE6005B89FA /* GuiApplicationTests */,
+				480794E71E885BE6005B89FA /* GuiApplicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		480794CA1E885BE6005B89FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				480794D41E885BE6005B89FA /* Assets.xcassets in Resources */,
+				480794D71E885BE6005B89FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		480794DB1E885BE6005B89FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		480794E61E885BE6005B89FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		480794C81E885BE6005B89FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				489406461EB2508200C32EDB /* HeadTracker.cpp in Sources */,
+				482F97411EC51AA30018CFCE /* MainVC.swift in Sources */,
+				48E0CFAE1E96E82900EC842D /* GazeMapper.swift in Sources */,
+				489406451EB2508200C32EDB /* HeadPoseEstimator.cpp in Sources */,
+				48E0CFA71E94B29200EC842D /* Profile.swift in Sources */,
+				48AB7E6D1E89CE2B00E156D7 /* source.cpp in Sources */,
+				480794D21E885BE6005B89FA /* CalibrationVC.swift in Sources */,
+				489406471EB2508200C32EDB /* PupilDetector.cpp in Sources */,
+				48E0CFAC1E96E82900EC842D /* DemoVC.swift in Sources */,
+				48F804A91E9171EC006471EF /* NSImage+Mat.mm in Sources */,
+				489406441EB2508200C32EDB /* FlowTracker.cpp in Sources */,
+				480794D01E885BE6005B89FA /* AppDelegate.swift in Sources */,
+				48E3AED21E8BCF190011506C /* CalibrationView.swift in Sources */,
+				489406591EB2F87600C32EDB /* Profile.cpp in Sources */,
+				489406491EB2508A00C32EDB /* GazeMapper.cpp in Sources */,
+				480795151E88668B005B89FA /* EyeTracker.mm in Sources */,
+				48E0CFAD1E96E82900EC842D /* DemoView.swift in Sources */,
+				489406431EB2508200C32EDB /* FaceDetector.cpp in Sources */,
+				48E3AEEB1E8D13B70011506C /* Calibration.swift in Sources */,
+				4894064D1EB2509000C32EDB /* UtilityFunctions.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		480794D91E885BE6005B89FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				480794E21E885BE6005B89FA /* GuiApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		480794E41E885BE6005B89FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				480794ED1E885BE6005B89FA /* GuiApplicationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		480794DF1E885BE6005B89FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 480794CB1E885BE6005B89FA /* GuiApplication */;
+			targetProxy = 480794DE1E885BE6005B89FA /* PBXContainerItemProxy */;
+		};
+		480794EA1E885BE6005B89FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 480794CB1E885BE6005B89FA /* GuiApplication */;
+			targetProxy = 480794E91E885BE6005B89FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		480794D51E885BE6005B89FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				480794D61E885BE6005B89FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		480794EF1E885BE6005B89FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		480794F01E885BE6005B89FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		480794F21E885BE6005B89FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KPK2Y4A48T;
+				FRAMEWORK_SEARCH_PATHS = /Users/kbai/Library/dlib/examples/build/dlib_build/debug/;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/include/eigen3,
+					/usr/local/include/eos/,
+					/usr/local/include/eos/3rdparty/cereal/include,
+					/usr/local/include/eos/3rdparty/glm,
+					/usr/local/include/eos/3rdparty/nanoflann/include,
+					"/usr/local/include/eos/3rdparty/eigen3-nnls/src",
+					/Users/kbai/Library/dlib,
+					/opt/X11/include,
+				);
+				INFOPLIST_FILE = GuiApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/kbai/Library/dlib/examples/build/dlib_build/debug,
+					/opt/X11/lib,
+					"/users/kbai/library/opencv-3.2.0/build/lib",
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ts",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+					"-lopencv_tracking",
+					"-lX11",
+					"-lpthread",
+					"-lboost_system",
+				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend  -debug-time-function-bodies";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinbai.GuiApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GuiApplication/GuiApplication-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		480794F31E885BE6005B89FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KPK2Y4A48T;
+				FRAMEWORK_SEARCH_PATHS = /Users/kbai/Library/dlib/examples/build/dlib_build/debug/;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/include/eigen3,
+					/usr/local/include/eos/,
+					/usr/local/include/eos/3rdparty/cereal/include,
+					/usr/local/include/eos/3rdparty/glm,
+					/usr/local/include/eos/3rdparty/nanoflann/include,
+					"/usr/local/include/eos/3rdparty/eigen3-nnls/src",
+					/Users/kbai/Library/dlib,
+					/opt/X11/include,
+				);
+				INFOPLIST_FILE = GuiApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/kbai/Library/dlib/examples/build/dlib_build/debug,
+					/opt/X11/lib,
+					"/users/kbai/library/opencv-3.2.0/build/lib",
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ts",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+					"-lopencv_tracking",
+					"-lX11",
+					"-lpthread",
+					"-lboost_system",
+				);
+				OTHER_SWIFT_FLAGS = "-Xfrontend  -debug-time-function-bodies";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinbai.GuiApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GuiApplication/GuiApplication-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		480794F51E885BE6005B89FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KPK2Y4A48T;
+				INFOPLIST_FILE = GuiApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinbai.GuiApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuiApplication.app/Contents/MacOS/GuiApplication";
+			};
+			name = Debug;
+		};
+		480794F61E885BE6005B89FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KPK2Y4A48T;
+				INFOPLIST_FILE = GuiApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinbai.GuiApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuiApplication.app/Contents/MacOS/GuiApplication";
+			};
+			name = Release;
+		};
+		480794F81E885BE6005B89FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KPK2Y4A48T;
+				INFOPLIST_FILE = GuiApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinbai.GuiApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GuiApplication;
+			};
+			name = Debug;
+		};
+		480794F91E885BE6005B89FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KPK2Y4A48T;
+				INFOPLIST_FILE = GuiApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinbai.GuiApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GuiApplication;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		480794C71E885BE6005B89FA /* Build configuration list for PBXProject "GuiApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				480794EF1E885BE6005B89FA /* Debug */,
+				480794F01E885BE6005B89FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		480794F11E885BE6005B89FA /* Build configuration list for PBXNativeTarget "GuiApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				480794F21E885BE6005B89FA /* Debug */,
+				480794F31E885BE6005B89FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		480794F41E885BE6005B89FA /* Build configuration list for PBXNativeTarget "GuiApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				480794F51E885BE6005B89FA /* Debug */,
+				480794F61E885BE6005B89FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		480794F71E885BE6005B89FA /* Build configuration list for PBXNativeTarget "GuiApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				480794F81E885BE6005B89FA /* Debug */,
+				480794F91E885BE6005B89FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 480794C41E885BE6005B89FA /* Project object */;
+}

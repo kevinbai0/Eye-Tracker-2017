@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48444F151E89DAEB000C53A0 /* source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48444F141E89DAEB000C53A0 /* source.cpp */; };
+		489406251EB24D5500C32EDB /* FaceDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 489406201EB24D5500C32EDB /* FaceDetector.cpp */; };
+		489406261EB24D5500C32EDB /* FlowTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 489406211EB24D5500C32EDB /* FlowTracker.cpp */; };
+		489406271EB24D5500C32EDB /* HeadPoseEstimator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 489406221EB24D5500C32EDB /* HeadPoseEstimator.cpp */; };
+		489406281EB24D5500C32EDB /* HeadTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 489406231EB24D5500C32EDB /* HeadTracker.cpp */; };
+		489406291EB24D5500C32EDB /* PupilDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 489406241EB24D5500C32EDB /* PupilDetector.cpp */; };
+		4894062B1EB24D5F00C32EDB /* GazeMapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4894062A1EB24D5F00C32EDB /* GazeMapper.cpp */; };
+		4894062E1EB24D6500C32EDB /* NeuralNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4894062C1EB24D6500C32EDB /* NeuralNetwork.cpp */; };
+		4894062F1EB24D6500C32EDB /* UtilityFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4894062D1EB24D6500C32EDB /* UtilityFunctions.cpp */; };
+		489406561EB2AC7300C32EDB /* Profile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 489406551EB2AC7300C32EDB /* Profile.cpp */; };
+		48C0382F1E7A2EC800B9F490 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48C0382E1E7A2EC800B9F490 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48C038291E7A2EC800B9F490 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		48444F141E89DAEB000C53A0 /* source.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = source.cpp; path = ../../../../../Library/dlib/dlib/all/source.cpp; sourceTree = "<group>"; };
+		489406161EB24D0700C32EDB /* FaceDetector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = FaceDetector.hpp; path = header/FeatureExtraction/FaceDetector.hpp; sourceTree = "<group>"; };
+		489406171EB24D0700C32EDB /* FlowTracker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = FlowTracker.hpp; path = header/FeatureExtraction/FlowTracker.hpp; sourceTree = "<group>"; };
+		489406181EB24D0700C32EDB /* HeadPoseEstimator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HeadPoseEstimator.hpp; path = header/FeatureExtraction/HeadPoseEstimator.hpp; sourceTree = "<group>"; };
+		489406191EB24D0700C32EDB /* HeadTracker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = HeadTracker.hpp; path = header/FeatureExtraction/HeadTracker.hpp; sourceTree = "<group>"; };
+		4894061A1EB24D0700C32EDB /* PupilDetector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = PupilDetector.hpp; path = header/FeatureExtraction/PupilDetector.hpp; sourceTree = "<group>"; };
+		4894061B1EB24D0F00C32EDB /* GazeMapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = GazeMapper.hpp; path = header/GazeEstimation/GazeMapper.hpp; sourceTree = "<group>"; };
+		4894061C1EB24D1B00C32EDB /* NeuralNetwork.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = NeuralNetwork.hpp; path = header/utils/NeuralNetwork.hpp; sourceTree = "<group>"; };
+		4894061D1EB24D1B00C32EDB /* UtilityFunctions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = UtilityFunctions.hpp; path = header/utils/UtilityFunctions.hpp; sourceTree = "<group>"; };
+		489406201EB24D5500C32EDB /* FaceDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FaceDetector.cpp; path = src/FeatureExtraction/FaceDetector.cpp; sourceTree = "<group>"; };
+		489406211EB24D5500C32EDB /* FlowTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FlowTracker.cpp; path = src/FeatureExtraction/FlowTracker.cpp; sourceTree = "<group>"; };
+		489406221EB24D5500C32EDB /* HeadPoseEstimator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HeadPoseEstimator.cpp; path = src/FeatureExtraction/HeadPoseEstimator.cpp; sourceTree = "<group>"; };
+		489406231EB24D5500C32EDB /* HeadTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HeadTracker.cpp; path = src/FeatureExtraction/HeadTracker.cpp; sourceTree = "<group>"; };
+		489406241EB24D5500C32EDB /* PupilDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PupilDetector.cpp; path = src/FeatureExtraction/PupilDetector.cpp; sourceTree = "<group>"; };
+		4894062A1EB24D5F00C32EDB /* GazeMapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GazeMapper.cpp; path = src/GazeEstimation/GazeMapper.cpp; sourceTree = "<group>"; };
+		4894062C1EB24D6500C32EDB /* NeuralNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NeuralNetwork.cpp; path = src/utils/NeuralNetwork.cpp; sourceTree = "<group>"; };
+		4894062D1EB24D6500C32EDB /* UtilityFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UtilityFunctions.cpp; path = src/utils/UtilityFunctions.cpp; sourceTree = "<group>"; };
+		489406541EB2AC6D00C32EDB /* Profile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Profile.hpp; path = header/GazeEstimation/Profile.hpp; sourceTree = "<group>"; };
+		489406551EB2AC7300C32EDB /* Profile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Profile.cpp; path = src/GazeEstimation/Profile.cpp; sourceTree = "<group>"; };
+		48C0382B1E7A2EC800B9F490 /* RobustHeadTracking */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RobustHeadTracking; sourceTree = BUILT_PRODUCTS_DIR; };
+		48C0382E1E7A2EC800B9F490 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48C038281E7A2EC800B9F490 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		483F2A1A1E7DCB2200EC6ABB /* header */ = {
+			isa = PBXGroup;
+			children = (
+				489406121EB24C5500C32EDB /* FeatureExtraction */,
+				489406131EB24C6300C32EDB /* GazeEstimation */,
+				489406141EB24C7500C32EDB /* utils */,
+			);
+			name = header;
+			sourceTree = "<group>";
+		};
+		489406111EB24B0C00C32EDB /* FeatureExtraction */ = {
+			isa = PBXGroup;
+			children = (
+				489406201EB24D5500C32EDB /* FaceDetector.cpp */,
+				489406211EB24D5500C32EDB /* FlowTracker.cpp */,
+				489406221EB24D5500C32EDB /* HeadPoseEstimator.cpp */,
+				489406231EB24D5500C32EDB /* HeadTracker.cpp */,
+				489406241EB24D5500C32EDB /* PupilDetector.cpp */,
+			);
+			name = FeatureExtraction;
+			sourceTree = "<group>";
+		};
+		489406121EB24C5500C32EDB /* FeatureExtraction */ = {
+			isa = PBXGroup;
+			children = (
+				489406161EB24D0700C32EDB /* FaceDetector.hpp */,
+				489406171EB24D0700C32EDB /* FlowTracker.hpp */,
+				489406181EB24D0700C32EDB /* HeadPoseEstimator.hpp */,
+				489406191EB24D0700C32EDB /* HeadTracker.hpp */,
+				4894061A1EB24D0700C32EDB /* PupilDetector.hpp */,
+			);
+			name = FeatureExtraction;
+			sourceTree = "<group>";
+		};
+		489406131EB24C6300C32EDB /* GazeEstimation */ = {
+			isa = PBXGroup;
+			children = (
+				489406541EB2AC6D00C32EDB /* Profile.hpp */,
+				4894061B1EB24D0F00C32EDB /* GazeMapper.hpp */,
+			);
+			name = GazeEstimation;
+			sourceTree = "<group>";
+		};
+		489406141EB24C7500C32EDB /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				4894061C1EB24D1B00C32EDB /* NeuralNetwork.hpp */,
+				4894061D1EB24D1B00C32EDB /* UtilityFunctions.hpp */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		489406151EB24C8400C32EDB /* GazeEstimation */ = {
+			isa = PBXGroup;
+			children = (
+				489406551EB2AC7300C32EDB /* Profile.cpp */,
+				4894062A1EB24D5F00C32EDB /* GazeMapper.cpp */,
+			);
+			name = GazeEstimation;
+			sourceTree = "<group>";
+		};
+		4894061E1EB24D3600C32EDB /* src */ = {
+			isa = PBXGroup;
+			children = (
+				489406111EB24B0C00C32EDB /* FeatureExtraction */,
+				489406151EB24C8400C32EDB /* GazeEstimation */,
+				4894061F1EB24D3C00C32EDB /* utils */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		4894061F1EB24D3C00C32EDB /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				4894062C1EB24D6500C32EDB /* NeuralNetwork.cpp */,
+				4894062D1EB24D6500C32EDB /* UtilityFunctions.cpp */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		48C038221E7A2EC800B9F490 = {
+			isa = PBXGroup;
+			children = (
+				48444F141E89DAEB000C53A0 /* source.cpp */,
+				48C0382D1E7A2EC800B9F490 /* RobustHeadTracking */,
+				48C0382C1E7A2EC800B9F490 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48C0382C1E7A2EC800B9F490 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48C0382B1E7A2EC800B9F490 /* RobustHeadTracking */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48C0382D1E7A2EC800B9F490 /* RobustHeadTracking */ = {
+			isa = PBXGroup;
+			children = (
+				48C0382E1E7A2EC800B9F490 /* main.cpp */,
+				4894061E1EB24D3600C32EDB /* src */,
+				483F2A1A1E7DCB2200EC6ABB /* header */,
+			);
+			path = RobustHeadTracking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48C0382A1E7A2EC800B9F490 /* RobustHeadTracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48C038321E7A2EC800B9F490 /* Build configuration list for PBXNativeTarget "RobustHeadTracking" */;
+			buildPhases = (
+				48C038271E7A2EC800B9F490 /* Sources */,
+				48C038281E7A2EC800B9F490 /* Frameworks */,
+				48C038291E7A2EC800B9F490 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RobustHeadTracking;
+			productName = RobustHeadTracking;
+			productReference = 48C0382B1E7A2EC800B9F490 /* RobustHeadTracking */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48C038231E7A2EC800B9F490 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Kevin Bai";
+				TargetAttributes = {
+					48C0382A1E7A2EC800B9F490 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = KPK2Y4A48T;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 48C038261E7A2EC800B9F490 /* Build configuration list for PBXProject "RobustHeadTracking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 48C038221E7A2EC800B9F490;
+			productRefGroup = 48C0382C1E7A2EC800B9F490 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48C0382A1E7A2EC800B9F490 /* RobustHeadTracking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48C038271E7A2EC800B9F490 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				489406281EB24D5500C32EDB /* HeadTracker.cpp in Sources */,
+				489406261EB24D5500C32EDB /* FlowTracker.cpp in Sources */,
+				489406291EB24D5500C32EDB /* PupilDetector.cpp in Sources */,
+				4894062B1EB24D5F00C32EDB /* GazeMapper.cpp in Sources */,
+				48444F151E89DAEB000C53A0 /* source.cpp in Sources */,
+				4894062E1EB24D6500C32EDB /* NeuralNetwork.cpp in Sources */,
+				4894062F1EB24D6500C32EDB /* UtilityFunctions.cpp in Sources */,
+				489406561EB2AC7300C32EDB /* Profile.cpp in Sources */,
+				489406251EB24D5500C32EDB /* FaceDetector.cpp in Sources */,
+				48C0382F1E7A2EC800B9F490 /* main.cpp in Sources */,
+				489406271EB24D5500C32EDB /* HeadPoseEstimator.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		48C038301E7A2EC800B9F490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		48C038311E7A2EC800B9F490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		48C038331E7A2EC800B9F490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				DEVELOPMENT_TEAM = KPK2Y4A48T;
+				FRAMEWORK_SEARCH_PATHS = /Users/kbai/Library/dlib/examples/build/dlib_build/debug/;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/include/eigen3,
+					/usr/local/include/eos/,
+					/usr/local/include/eos/3rdparty/cereal/include,
+					/usr/local/include/eos/3rdparty/glm,
+					/usr/local/include/eos/3rdparty/nanoflann/include,
+					"/usr/local/include/eos/3rdparty/eigen3-nnls/src",
+					/Users/kbai/Library/dlib,
+					/opt/X11/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Users/kbai/Library/dlib/examples/build/dlib_build/debug,
+					/opt/X11/lib,
+					"/users/kbai/library/opencv-3.2.0/build/lib",
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ts",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+					"-lopencv_tracking",
+					"-lX11",
+					"-lpthread",
+					"-lboost_system",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64 arm64";
+			};
+			name = Debug;
+		};
+		48C038341E7A2EC800B9F490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				DEVELOPMENT_TEAM = KPK2Y4A48T;
+				FRAMEWORK_SEARCH_PATHS = /Users/kbai/Library/dlib/examples/build/dlib_build/debug/;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/include/eigen3,
+					/usr/local/include/eos/,
+					/usr/local/include/eos/3rdparty/cereal/include,
+					/usr/local/include/eos/3rdparty/glm,
+					/usr/local/include/eos/3rdparty/nanoflann/include,
+					"/usr/local/include/eos/3rdparty/eigen3-nnls/src",
+					/Users/kbai/Library/dlib,
+					/opt/X11/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Users/kbai/Library/dlib/examples/build/dlib_build/debug,
+					/opt/X11/lib,
+					"/users/kbai/library/opencv-3.2.0/build/lib",
+					/usr/local/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ts",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+					"-lopencv_tracking",
+					"-lX11",
+					"-lpthread",
+					"-lboost_system",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64 arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48C038261E7A2EC800B9F490 /* Build configuration list for PBXProject "RobustHeadTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48C038301E7A2EC800B9F490 /* Debug */,
+				48C038311E7A2EC800B9F490 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48C038321E7A2EC800B9F490 /* Build configuration list for PBXNativeTarget "RobustHeadTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48C038331E7A2EC800B9F490 /* Debug */,
+				48C038341E7A2EC800B9F490 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48C038231E7A2EC800B9F490 /* Project object */;
+}

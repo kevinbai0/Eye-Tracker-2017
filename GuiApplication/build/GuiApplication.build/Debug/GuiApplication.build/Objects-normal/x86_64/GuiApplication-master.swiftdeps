@@ -1,0 +1,8 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "b27b766d231f8df11b6f9c5a4bea13be"
+build_time: [544581985, 178852000]
+inputs:
+  "/Users/kbai/Documents/XCodeProjects/CommandLineProjects/Actual/GuiApplication/GuiApplication/ViewController.swift": [544581983, 0]
+  "/Users/kbai/Documents/XCodeProjects/CommandLineProjects/Actual/GuiApplication/GuiApplication/AppDelegate.swift": [544456232, 0]
+  "/Users/kbai/Documents/XCodeProjects/CommandLineProjects/Actual/GuiApplication/GuiApplication/CalibrationView.swift": [544581889, 0]
+  "/Users/kbai/Documents/XCodeProjects/CommandLineProjects/Actual/GuiApplication/GuiApplication/Calibration.swift": [544392709, 0]

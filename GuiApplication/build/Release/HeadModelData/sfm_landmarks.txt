@@ -1,0 +1,83 @@
+; Mapping from the 68-point ibug annotations to the Surrey Face Model (SFM) mesh vertex indices.
+; Note: Points above vertex id 845 are not defined on the reference and thus not available in all model resolutions.
+
+landmarkMappings ; A mapping from input landmarks (ibug, lhs) to output landmarks (SFM, rhs)
+{
+	         ; 0 to 7 are the right contour landmarks
+	 8    33 ; chin bottom
+	         ; 9 to 16 are the left contour landmarks
+	17   225 ; right eyebrow outer-corner (17)
+	18   229 ; right eyebrow between middle and outer corner
+	19   233 ; right eyebrow middle, vertical middle (20)
+	20  2086 ; right eyebrow between middle and inner corner
+	21   157 ; right eyebrow inner-corner (19)
+	22   590 ; left eyebrow inner-corner (23)
+	23  2091 ; left eyebrow between inner corner and middle
+	24   666 ; left eyebrow middle (24)
+	25   662 ; left eyebrow between middle and outer corner
+	26   658 ; left eyebrow outer-corner (22)
+	27  2842 ; bridge of the nose (parallel to upper eye lids)
+	28   379 ; middle of the nose, a bit below the lower eye lids
+	29   272 ; above nose-tip (1cm or so)
+	30   114 ; nose-tip (3)
+	31   100 ; right nostril, below nose, nose-lip junction
+	32  2794 ; nose-lip junction
+	33   270 ; nose-lip junction (28)
+	34  2797 ; nose-lip junction
+	35   537 ; left nostril, below nose, nose-lip junction
+	36   177 ; right eye outer-corner (1)
+	37   172 ; right eye pupil top right (from subject's perspective)
+	38   191 ; right eye pupil top left
+	39   181 ; right eye inner-corner (5)
+	40   173 ; right eye pupil bottom left
+	41   174 ; right eye pupil bottom right
+	42   614 ; left eye inner-corner (8)
+	43   624 ; left eye pupil top right
+	44   605 ; left eye pupil top left
+	45   610 ; left eye outer-corner (2)
+	46   607 ; left eye pupil bottom left
+	47   606 ; left eye pupil bottom right
+	48   398 ; right mouth corner (12)
+	49   315 ; upper lip right top outer
+	50   413 ; upper lip middle top right
+	51   329 ; upper lip middle top (14)
+	52   825 ; upper lip middle top left
+	53   736 ; upper lip left top outer
+	54   812 ; left mouth corner (13)
+	55   841 ; lower lip left bottom outer
+	56   693 ; lower lip middle bottom left
+	57   411 ; lower lip middle bottom (17)
+	58   264 ; lower lip middle bottom right
+	59   431 ; lower lip right bottom outer
+	         ; 61 not defined - would be right inner corner of the mouth
+	61   416 ; upper lip right bottom outer
+	62   423 ; upper lip middle bottom
+	63   828 ; upper lip left bottom outer
+	         ; 64 not defined - would be left inner corner of the mouth
+	65   817 ; lower lip left top outer
+	66   442 ; lower lip middle top
+	67   404 ; lower lip right top outer
+}
+contour_landmarks
+{
+	right {
+		0
+		1
+		2
+		3
+		4
+		5
+		6
+		7
+	}
+	left {
+		9
+		10
+		11
+		12
+		13
+		14
+		15
+		16
+	}
+}

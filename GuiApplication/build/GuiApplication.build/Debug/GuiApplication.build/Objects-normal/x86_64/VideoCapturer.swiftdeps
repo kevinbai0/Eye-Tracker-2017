@@ -1,0 +1,733 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "VideoCapturer"
+provides-nominal:
+- "C14GuiApplication13VideoCapturer"
+provides-member:
+- ["C14GuiApplication13VideoCapturer", ""]
+provides-dynamic-lookup:
+- "captureOutput"
+depends-top-level:
+- !private "BooleanLiteralType"
+- "AVCaptureDevice"
+- "AVCaptureSession"
+- !private "NSLog"
+- !private "CVPixelBufferGetBaseAddress"
+- !private "AVCaptureVideoDataOutput"
+- !private "CVPixelBufferGetHeight"
+- !private "CGImageAlphaInfo"
+- !private "CVPixelBufferGetWidth"
+- !private "CGBitmapInfo"
+- "CastingPrecedence"
+- !private "AVCaptureSessionPresetLow"
+- !private "=="
+- "AssignmentPrecedence"
+- !private "UInt32"
+- !private "CVPixelBufferUnlockBaseAddress"
+- !private "CGSize"
+- "AVCaptureVideoDataOutputSampleBufferDelegate"
+- "AVCaptureOutput"
+- "NSImage"
+- "AVCaptureConnection"
+- !private "NSNumber"
+- !private "AVCaptureDeviceInput"
+- !private "kCVPixelFormatType_32BGRA"
+- !private "StringLiteralType"
+- !private "|"
+- "AVMediaTypeVideo"
+- !private "Dictionary"
+- "VideoCapturer"
+- !private "CMSampleBufferGetImageBuffer"
+- !private ">"
+- !private "CVPixelBufferGetBytesPerRow"
+- !private "CGColorSpaceCreateDeviceRGB"
+- !private "CVPixelBufferLockFlags"
+- !private "kCVPixelBufferPixelFormatTypeKey"
+- !private "DispatchQueue"
+- "CMSampleBuffer"
+- !private "NSString"
+- !private "CGContext"
+- !private "NSError"
+- !private "eyeTracker"
+- !private "CVPixelBufferLockBaseAddress"
+depends-member:
+- ["CSo15AVCaptureDevice", "defaultDevice"]
+- ["CSo15AVCaptureDevice", "deinit"]
+- ["CSo20AVCaptureDeviceInput", "deinit"]
+- !private ["CSo20AVCaptureDeviceInput", "init"]
+- !private ["CSo14AVCaptureInput", "init"]
+- !private ["CSo15AVCaptureOutput", "alwaysDiscardsLateVideoFrames"]
+- !private ["CSo15AVCaptureOutput", "init"]
+- !private ["CSo15AVCaptureOutput", "setSampleBufferDelegate"]
+- !private ["CSo15AVCaptureOutput", "videoSettings"]
+- !private ["CSo16AVCaptureSession", "addInput"]
+- !private ["CSo16AVCaptureSession", "addOutput"]
+- !private ["CSo16AVCaptureSession", "beginConfiguration"]
+- !private ["CSo16AVCaptureSession", "canAddInput"]
+- !private ["CSo16AVCaptureSession", "canAddOutput"]
+- !private ["CSo16AVCaptureSession", "commitConfiguration"]
+- ["CSo16AVCaptureSession", "deinit"]
+- !private ["CSo16AVCaptureSession", "init"]
+- !private ["CSo16AVCaptureSession", "sessionPreset"]
+- !private ["CSo16AVCaptureSession", "startRunning"]
+- !private ["CSo24AVCaptureVideoDataOutput", "alwaysDiscardsLateVideoFrames"]
+- ["CSo24AVCaptureVideoDataOutput", "deinit"]
+- !private ["CSo24AVCaptureVideoDataOutput", "init"]
+- !private ["CSo24AVCaptureVideoDataOutput", "setSampleBufferDelegate"]
+- !private ["CSo24AVCaptureVideoDataOutput", "videoSettings"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "AVCaptureDevice"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "AVCaptureDeviceInput"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "AVCaptureSession"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "AVCaptureSessionPresetLow"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "AVCaptureVideoDataOutput"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "AVMediaTypeVideo"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "CGBitmapInfo"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "CGColorSpaceCreateDeviceRGB"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "CGContext"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "CGImageAlphaInfo"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "CGSize"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "CMSampleBufferGetImageBuffer"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "CVPixelBufferGetBaseAddress"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "CVPixelBufferGetBytesPerRow"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "CVPixelBufferGetHeight"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "CVPixelBufferGetWidth"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "CVPixelBufferLockBaseAddress"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "CVPixelBufferLockFlags"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "CVPixelBufferUnlockBaseAddress"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "DispatchQueue"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "NSImage"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "NSLog"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "NSNumber"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "autorelease"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "cameraSession"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "captureDevice"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "captureOutput"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "class"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "conforms"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "conformsToProtocol"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "debugDescription"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "description"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "eyeTracker"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "getImageFromSampleBuffer"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "hash"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "imageView"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "isEqual"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "isKind"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "isKindOfClass"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "isMember"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "isMemberOfClass"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "isProxy"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "kCVPixelBufferPixelFormatTypeKey"]
+- !private ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "kCVPixelFormatType_32BGRA"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "perform"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "performSelector"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "release"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "responds"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "respondsToSelector"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "retain"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "retainCount"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "self"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "superclass"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", "zone"]
+- ["PSo44AVCaptureVideoDataOutputSampleBufferDelegate", ""]
+- ["Ps9AnyObject", "AVCaptureDevice"]
+- !private ["Ps9AnyObject", "AVCaptureDeviceInput"]
+- !private ["Ps9AnyObject", "AVCaptureSession"]
+- !private ["Ps9AnyObject", "AVCaptureSessionPresetLow"]
+- !private ["Ps9AnyObject", "AVCaptureVideoDataOutput"]
+- ["Ps9AnyObject", "AVMediaTypeVideo"]
+- !private ["Ps9AnyObject", "CGBitmapInfo"]
+- !private ["Ps9AnyObject", "CGColorSpaceCreateDeviceRGB"]
+- !private ["Ps9AnyObject", "CGContext"]
+- !private ["Ps9AnyObject", "CGImageAlphaInfo"]
+- !private ["Ps9AnyObject", "CGSize"]
+- !private ["Ps9AnyObject", "CMSampleBufferGetImageBuffer"]
+- !private ["Ps9AnyObject", "CVPixelBufferGetBaseAddress"]
+- !private ["Ps9AnyObject", "CVPixelBufferGetBytesPerRow"]
+- !private ["Ps9AnyObject", "CVPixelBufferGetHeight"]
+- !private ["Ps9AnyObject", "CVPixelBufferGetWidth"]
+- !private ["Ps9AnyObject", "CVPixelBufferLockBaseAddress"]
+- !private ["Ps9AnyObject", "CVPixelBufferLockFlags"]
+- !private ["Ps9AnyObject", "CVPixelBufferUnlockBaseAddress"]
+- !private ["Ps9AnyObject", "DispatchQueue"]
+- !private ["Ps9AnyObject", "NSImage"]
+- !private ["Ps9AnyObject", "NSLog"]
+- !private ["Ps9AnyObject", "NSNumber"]
+- !private ["Ps9AnyObject", "addInput"]
+- !private ["Ps9AnyObject", "addOutput"]
+- !private ["Ps9AnyObject", "alwaysDiscardsLateVideoFrames"]
+- !private ["Ps9AnyObject", "async"]
+- ["Ps9AnyObject", "autorelease"]
+- !private ["Ps9AnyObject", "beginConfiguration"]
+- !private ["Ps9AnyObject", "cameraSession"]
+- !private ["Ps9AnyObject", "canAddInput"]
+- !private ["Ps9AnyObject", "canAddOutput"]
+- !private ["Ps9AnyObject", "captureDevice"]
+- ["Ps9AnyObject", "captureOutput"]
+- ["Ps9AnyObject", "class"]
+- !private ["Ps9AnyObject", "commitConfiguration"]
+- ["Ps9AnyObject", "conforms"]
+- ["Ps9AnyObject", "conformsToProtocol"]
+- ["Ps9AnyObject", "debugDescription"]
+- ["Ps9AnyObject", "defaultDevice"]
+- ["Ps9AnyObject", "description"]
+- !private ["Ps9AnyObject", "eyeTracker"]
+- !private ["Ps9AnyObject", "getImageFromSampleBuffer"]
+- ["Ps9AnyObject", "hash"]
+- !private ["Ps9AnyObject", "imageView"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "isEqual"]
+- ["Ps9AnyObject", "isKind"]
+- ["Ps9AnyObject", "isKindOfClass"]
+- ["Ps9AnyObject", "isMember"]
+- ["Ps9AnyObject", "isMemberOfClass"]
+- ["Ps9AnyObject", "isProxy"]
+- !private ["Ps9AnyObject", "kCVPixelBufferPixelFormatTypeKey"]
+- !private ["Ps9AnyObject", "kCVPixelFormatType_32BGRA"]
+- !private ["Ps9AnyObject", "localizedDescription"]
+- !private ["Ps9AnyObject", "main"]
+- !private ["Ps9AnyObject", "makeImage"]
+- ["Ps9AnyObject", "perform"]
+- ["Ps9AnyObject", "performSelector"]
+- ["Ps9AnyObject", "release"]
+- ["Ps9AnyObject", "responds"]
+- ["Ps9AnyObject", "respondsToSelector"]
+- ["Ps9AnyObject", "retain"]
+- ["Ps9AnyObject", "retainCount"]
+- ["Ps9AnyObject", "self"]
+- !private ["Ps9AnyObject", "sessionPreset"]
+- !private ["Ps9AnyObject", "setSampleBufferDelegate"]
+- !private ["Ps9AnyObject", "size"]
+- !private ["Ps9AnyObject", "startRunning"]
+- ["Ps9AnyObject", "superclass"]
+- !private ["Ps9AnyObject", "videoSettings"]
+- ["Ps9AnyObject", "zone"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- ["CSo8CFString", "deinit"]
+- !private ["VSC12CGBitmapInfo", "byteOrder32Little"]
+- ["VSC12CGBitmapInfo", "deinit"]
+- !private ["VSC12CGBitmapInfo", "init"]
+- !private ["VSC12CGBitmapInfo", "rawValue"]
+- ["CSo12CGColorSpace", "deinit"]
+- ["CSo9CGContext", "deinit"]
+- !private ["CSo9CGContext", "init"]
+- !private ["CSo9CGContext", "makeImage"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- ["CSo7CGImage", "deinit"]
+- ["OSC16CGImageAlphaInfo", "deinit"]
+- !private ["OSC16CGImageAlphaInfo", "noneSkipFirst"]
+- !private ["OSC16CGImageAlphaInfo", "rawValue"]
+- ["VSC6CGSize", "deinit"]
+- !private ["VSC6CGSize", "init"]
+- !private ["VSC6CGSize", "width"]
+- ["CSo14CMSampleBuffer", "deinit"]
+- ["CSo8CVBuffer", "deinit"]
+- ["VSC22CVPixelBufferLockFlags", "deinit"]
+- !private ["VSC22CVPixelBufferLockFlags", "init"]
+- !private ["Ps7CVarArg", "Key"]
+- !private ["Ps7CVarArg", "Value"]
+- !private ["Ps7CVarArg", "addInput"]
+- !private ["Ps7CVarArg", "addOutput"]
+- !private ["Ps7CVarArg", "alwaysDiscardsLateVideoFrames"]
+- !private ["Ps7CVarArg", "async"]
+- !private ["Ps7CVarArg", "beginConfiguration"]
+- !private ["Ps7CVarArg", "canAddInput"]
+- !private ["Ps7CVarArg", "canAddOutput"]
+- !private ["Ps7CVarArg", "commitConfiguration"]
+- ["Ps7CVarArg", "defaultDevice"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "localizedDescription"]
+- !private ["Ps7CVarArg", "main"]
+- !private ["Ps7CVarArg", "sessionPreset"]
+- !private ["Ps7CVarArg", "setSampleBufferDelegate"]
+- !private ["Ps7CVarArg", "size"]
+- !private ["Ps7CVarArg", "startRunning"]
+- !private ["Ps7CVarArg", "videoSettings"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Collection", "Key"]
+- !private ["Ps10Collection", "Value"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "addInput"]
+- !private ["Ps28CustomDebugStringConvertible", "addOutput"]
+- !private ["Ps28CustomDebugStringConvertible", "alwaysDiscardsLateVideoFrames"]
+- !private ["Ps28CustomDebugStringConvertible", "async"]
+- !private ["Ps28CustomDebugStringConvertible", "beginConfiguration"]
+- !private ["Ps28CustomDebugStringConvertible", "canAddInput"]
+- !private ["Ps28CustomDebugStringConvertible", "canAddOutput"]
+- !private ["Ps28CustomDebugStringConvertible", "commitConfiguration"]
+- ["Ps28CustomDebugStringConvertible", "defaultDevice"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "localizedDescription"]
+- !private ["Ps28CustomDebugStringConvertible", "main"]
+- !private ["Ps28CustomDebugStringConvertible", "sessionPreset"]
+- !private ["Ps28CustomDebugStringConvertible", "setSampleBufferDelegate"]
+- !private ["Ps28CustomDebugStringConvertible", "size"]
+- !private ["Ps28CustomDebugStringConvertible", "startRunning"]
+- !private ["Ps28CustomDebugStringConvertible", "videoSettings"]
+- !private ["Ps28CustomDebugStringConvertible", "width"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps17CustomReflectable", "Key"]
+- !private ["Ps17CustomReflectable", "Value"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "width"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "addInput"]
+- !private ["Ps23CustomStringConvertible", "addOutput"]
+- !private ["Ps23CustomStringConvertible", "alwaysDiscardsLateVideoFrames"]
+- !private ["Ps23CustomStringConvertible", "async"]
+- !private ["Ps23CustomStringConvertible", "beginConfiguration"]
+- !private ["Ps23CustomStringConvertible", "canAddInput"]
+- !private ["Ps23CustomStringConvertible", "canAddOutput"]
+- !private ["Ps23CustomStringConvertible", "commitConfiguration"]
+- ["Ps23CustomStringConvertible", "defaultDevice"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "localizedDescription"]
+- !private ["Ps23CustomStringConvertible", "main"]
+- !private ["Ps23CustomStringConvertible", "sessionPreset"]
+- !private ["Ps23CustomStringConvertible", "setSampleBufferDelegate"]
+- !private ["Ps23CustomStringConvertible", "size"]
+- !private ["Ps23CustomStringConvertible", "startRunning"]
+- !private ["Ps23CustomStringConvertible", "videoSettings"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- ["Vs10Dictionary", "deinit"]
+- !private ["CSo14DispatchObject", "async"]
+- !private ["CSo14DispatchObject", "init"]
+- !private ["CSo14DispatchObject", "main"]
+- !private ["CSo13DispatchQueue", "async"]
+- ["CSo13DispatchQueue", "deinit"]
+- !private ["CSo13DispatchQueue", "init"]
+- !private ["CSo13DispatchQueue", "main"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "addInput"]
+- !private ["Ps9Equatable", "addOutput"]
+- !private ["Ps9Equatable", "alwaysDiscardsLateVideoFrames"]
+- !private ["Ps9Equatable", "async"]
+- !private ["Ps9Equatable", "beginConfiguration"]
+- !private ["Ps9Equatable", "byteOrder32Little"]
+- !private ["Ps9Equatable", "canAddInput"]
+- !private ["Ps9Equatable", "canAddOutput"]
+- !private ["Ps9Equatable", "commitConfiguration"]
+- ["Ps9Equatable", "defaultDevice"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "localizedDescription"]
+- !private ["Ps9Equatable", "main"]
+- !private ["Ps9Equatable", "noneSkipFirst"]
+- !private ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "sessionPreset"]
+- !private ["Ps9Equatable", "setSampleBufferDelegate"]
+- !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "startRunning"]
+- !private ["Ps9Equatable", "videoSettings"]
+- !private ["Ps9Equatable", "width"]
+- !private ["Ps5Error", "localizedDescription"]
+- !private ["Ps25ExpressibleByArrayLiteral", "byteOrder32Little"]
+- !private ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "rawValue"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "init"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "addInput"]
+- !private ["Ps8Hashable", "addOutput"]
+- !private ["Ps8Hashable", "alwaysDiscardsLateVideoFrames"]
+- !private ["Ps8Hashable", "async"]
+- !private ["Ps8Hashable", "beginConfiguration"]
+- !private ["Ps8Hashable", "canAddInput"]
+- !private ["Ps8Hashable", "canAddOutput"]
+- !private ["Ps8Hashable", "commitConfiguration"]
+- ["Ps8Hashable", "defaultDevice"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "localizedDescription"]
+- !private ["Ps8Hashable", "main"]
+- !private ["Ps8Hashable", "noneSkipFirst"]
+- !private ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "sessionPreset"]
+- !private ["Ps8Hashable", "setSampleBufferDelegate"]
+- !private ["Ps8Hashable", "size"]
+- !private ["Ps8Hashable", "startRunning"]
+- !private ["Ps8Hashable", "videoSettings"]
+- ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Ps13IndexableBase", "Key"]
+- !private ["Ps13IndexableBase", "Value"]
+- ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "localizedDescription"]
+- !private ["PSo8NSCoding", "size"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "localizedDescription"]
+- !private ["PSo9NSCopying", "size"]
+- ["CSo7NSError", "deinit"]
+- !private ["CSo7NSError", "localizedDescription"]
+- !private ["PSo20NSFetchRequestResult", "init"]
+- ["CSo7NSImage", "deinit"]
+- !private ["CSo7NSImage", "init"]
+- !private ["CSo7NSImage", "size"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSNumber", "deinit"]
+- !private ["CSo8NSNumber", "init"]
+- !private ["CSo8NSObject", "addInput"]
+- !private ["CSo8NSObject", "addOutput"]
+- !private ["CSo8NSObject", "alwaysDiscardsLateVideoFrames"]
+- !private ["CSo8NSObject", "async"]
+- !private ["CSo8NSObject", "beginConfiguration"]
+- !private ["CSo8NSObject", "canAddInput"]
+- !private ["CSo8NSObject", "canAddOutput"]
+- !private ["CSo8NSObject", "commitConfiguration"]
+- ["CSo8NSObject", "defaultDevice"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "localizedDescription"]
+- !private ["CSo8NSObject", "main"]
+- !private ["CSo8NSObject", "sessionPreset"]
+- !private ["CSo8NSObject", "setSampleBufferDelegate"]
+- !private ["CSo8NSObject", "size"]
+- !private ["CSo8NSObject", "startRunning"]
+- !private ["CSo8NSObject", "videoSettings"]
+- ["PSo16NSObjectProtocol", "AVCaptureDevice"]
+- !private ["PSo16NSObjectProtocol", "AVCaptureDeviceInput"]
+- !private ["PSo16NSObjectProtocol", "AVCaptureSession"]
+- !private ["PSo16NSObjectProtocol", "AVCaptureSessionPresetLow"]
+- !private ["PSo16NSObjectProtocol", "AVCaptureVideoDataOutput"]
+- ["PSo16NSObjectProtocol", "AVMediaTypeVideo"]
+- !private ["PSo16NSObjectProtocol", "CGBitmapInfo"]
+- !private ["PSo16NSObjectProtocol", "CGColorSpaceCreateDeviceRGB"]
+- !private ["PSo16NSObjectProtocol", "CGContext"]
+- !private ["PSo16NSObjectProtocol", "CGImageAlphaInfo"]
+- !private ["PSo16NSObjectProtocol", "CGSize"]
+- !private ["PSo16NSObjectProtocol", "CMSampleBufferGetImageBuffer"]
+- !private ["PSo16NSObjectProtocol", "CVPixelBufferGetBaseAddress"]
+- !private ["PSo16NSObjectProtocol", "CVPixelBufferGetBytesPerRow"]
+- !private ["PSo16NSObjectProtocol", "CVPixelBufferGetHeight"]
+- !private ["PSo16NSObjectProtocol", "CVPixelBufferGetWidth"]
+- !private ["PSo16NSObjectProtocol", "CVPixelBufferLockBaseAddress"]
+- !private ["PSo16NSObjectProtocol", "CVPixelBufferLockFlags"]
+- !private ["PSo16NSObjectProtocol", "CVPixelBufferUnlockBaseAddress"]
+- !private ["PSo16NSObjectProtocol", "DispatchQueue"]
+- !private ["PSo16NSObjectProtocol", "NSImage"]
+- !private ["PSo16NSObjectProtocol", "NSLog"]
+- !private ["PSo16NSObjectProtocol", "NSNumber"]
+- !private ["PSo16NSObjectProtocol", "addInput"]
+- !private ["PSo16NSObjectProtocol", "addOutput"]
+- !private ["PSo16NSObjectProtocol", "alwaysDiscardsLateVideoFrames"]
+- !private ["PSo16NSObjectProtocol", "async"]
+- ["PSo16NSObjectProtocol", "autorelease"]
+- !private ["PSo16NSObjectProtocol", "beginConfiguration"]
+- !private ["PSo16NSObjectProtocol", "cameraSession"]
+- !private ["PSo16NSObjectProtocol", "canAddInput"]
+- !private ["PSo16NSObjectProtocol", "canAddOutput"]
+- !private ["PSo16NSObjectProtocol", "captureDevice"]
+- ["PSo16NSObjectProtocol", "captureOutput"]
+- ["PSo16NSObjectProtocol", "class"]
+- !private ["PSo16NSObjectProtocol", "commitConfiguration"]
+- ["PSo16NSObjectProtocol", "conforms"]
+- ["PSo16NSObjectProtocol", "conformsToProtocol"]
+- ["PSo16NSObjectProtocol", "debugDescription"]
+- ["PSo16NSObjectProtocol", "defaultDevice"]
+- ["PSo16NSObjectProtocol", "description"]
+- !private ["PSo16NSObjectProtocol", "eyeTracker"]
+- !private ["PSo16NSObjectProtocol", "getImageFromSampleBuffer"]
+- ["PSo16NSObjectProtocol", "hash"]
+- !private ["PSo16NSObjectProtocol", "imageView"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "isEqual"]
+- ["PSo16NSObjectProtocol", "isKind"]
+- ["PSo16NSObjectProtocol", "isKindOfClass"]
+- ["PSo16NSObjectProtocol", "isMember"]
+- ["PSo16NSObjectProtocol", "isMemberOfClass"]
+- ["PSo16NSObjectProtocol", "isProxy"]
+- !private ["PSo16NSObjectProtocol", "kCVPixelBufferPixelFormatTypeKey"]
+- !private ["PSo16NSObjectProtocol", "kCVPixelFormatType_32BGRA"]
+- !private ["PSo16NSObjectProtocol", "localizedDescription"]
+- !private ["PSo16NSObjectProtocol", "main"]
+- ["PSo16NSObjectProtocol", "perform"]
+- ["PSo16NSObjectProtocol", "performSelector"]
+- ["PSo16NSObjectProtocol", "release"]
+- ["PSo16NSObjectProtocol", "responds"]
+- ["PSo16NSObjectProtocol", "respondsToSelector"]
+- ["PSo16NSObjectProtocol", "retain"]
+- ["PSo16NSObjectProtocol", "retainCount"]
+- ["PSo16NSObjectProtocol", "self"]
+- !private ["PSo16NSObjectProtocol", "sessionPreset"]
+- !private ["PSo16NSObjectProtocol", "setSampleBufferDelegate"]
+- !private ["PSo16NSObjectProtocol", "size"]
+- !private ["PSo16NSObjectProtocol", "startRunning"]
+- ["PSo16NSObjectProtocol", "superclass"]
+- !private ["PSo16NSObjectProtocol", "videoSettings"]
+- ["PSo16NSObjectProtocol", "zone"]
+- !private ["PSo19NSPasteboardReading", "init"]
+- !private ["PSo19NSPasteboardReading", "size"]
+- !private ["PSo19NSPasteboardWriting", "init"]
+- !private ["PSo19NSPasteboardWriting", "size"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "localizedDescription"]
+- !private ["PSo14NSSecureCoding", "size"]
+- ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo7NSValue", "init"]
+- !private ["CSo9OS_object", "async"]
+- !private ["CSo9OS_object", "init"]
+- !private ["CSo9OS_object", "main"]
+- !private ["Ps9OptionSet", "byteOrder32Little"]
+- !private ["Ps9OptionSet", "init"]
+- !private ["Ps9OptionSet", "rawValue"]
+- ["Sq", "deinit"]
+- !private ["Ps16RawRepresentable", "byteOrder32Little"]
+- !private ["Ps16RawRepresentable", "init"]
+- !private ["Ps16RawRepresentable", "noneSkipFirst"]
+- !private ["Ps16RawRepresentable", "rawValue"]
+- !private ["Ps8Sequence", "Key"]
+- !private ["Ps8Sequence", "Value"]
+- !private ["Ps10SetAlgebra", "byteOrder32Little"]
+- !private ["Ps10SetAlgebra", "init"]
+- !private ["Ps10SetAlgebra", "rawValue"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- ["Vs6UInt32", "deinit"]
+- ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- ["C14GuiApplication13VideoCapturer", "AVCaptureConnection"]
+- ["C14GuiApplication13VideoCapturer", "AVCaptureDevice"]
+- !private ["C14GuiApplication13VideoCapturer", "AVCaptureDeviceInput"]
+- ["C14GuiApplication13VideoCapturer", "AVCaptureOutput"]
+- ["C14GuiApplication13VideoCapturer", "AVCaptureSession"]
+- !private ["C14GuiApplication13VideoCapturer", "AVCaptureSessionPresetLow"]
+- !private ["C14GuiApplication13VideoCapturer", "AVCaptureVideoDataOutput"]
+- ["C14GuiApplication13VideoCapturer", "AVMediaTypeVideo"]
+- !private ["C14GuiApplication13VideoCapturer", "CGBitmapInfo"]
+- !private ["C14GuiApplication13VideoCapturer", "CGColorSpaceCreateDeviceRGB"]
+- !private ["C14GuiApplication13VideoCapturer", "CGContext"]
+- !private ["C14GuiApplication13VideoCapturer", "CGImageAlphaInfo"]
+- !private ["C14GuiApplication13VideoCapturer", "CGSize"]
+- ["C14GuiApplication13VideoCapturer", "CMSampleBuffer"]
+- !private ["C14GuiApplication13VideoCapturer", "CMSampleBufferGetImageBuffer"]
+- !private ["C14GuiApplication13VideoCapturer", "CVPixelBufferGetBaseAddress"]
+- !private ["C14GuiApplication13VideoCapturer", "CVPixelBufferGetBytesPerRow"]
+- !private ["C14GuiApplication13VideoCapturer", "CVPixelBufferGetHeight"]
+- !private ["C14GuiApplication13VideoCapturer", "CVPixelBufferGetWidth"]
+- !private ["C14GuiApplication13VideoCapturer", "CVPixelBufferLockBaseAddress"]
+- !private ["C14GuiApplication13VideoCapturer", "CVPixelBufferLockFlags"]
+- !private ["C14GuiApplication13VideoCapturer", "CVPixelBufferUnlockBaseAddress"]
+- !private ["C14GuiApplication13VideoCapturer", "DispatchQueue"]
+- !private ["C14GuiApplication13VideoCapturer", "NSError"]
+- ["C14GuiApplication13VideoCapturer", "NSImage"]
+- !private ["C14GuiApplication13VideoCapturer", "NSLog"]
+- !private ["C14GuiApplication13VideoCapturer", "NSNumber"]
+- !private ["C14GuiApplication13VideoCapturer", "NSString"]
+- !private ["C14GuiApplication13VideoCapturer", "UInt32"]
+- ["C14GuiApplication13VideoCapturer", "autorelease"]
+- ["C14GuiApplication13VideoCapturer", "cameraSession"]
+- !private ["C14GuiApplication13VideoCapturer", "cameraSession.storage"]
+- ["C14GuiApplication13VideoCapturer", "captureDevice"]
+- ["C14GuiApplication13VideoCapturer", "captureOutput"]
+- ["C14GuiApplication13VideoCapturer", "class"]
+- ["C14GuiApplication13VideoCapturer", "conforms"]
+- ["C14GuiApplication13VideoCapturer", "conformsToProtocol"]
+- ["C14GuiApplication13VideoCapturer", "debugDescription"]
+- ["C14GuiApplication13VideoCapturer", "deinit"]
+- ["C14GuiApplication13VideoCapturer", "description"]
+- !private ["C14GuiApplication13VideoCapturer", "eyeTracker"]
+- ["C14GuiApplication13VideoCapturer", "getImageFromSampleBuffer"]
+- ["C14GuiApplication13VideoCapturer", "hash"]
+- !private ["C14GuiApplication13VideoCapturer", "imageView"]
+- ["C14GuiApplication13VideoCapturer", "init"]
+- ["C14GuiApplication13VideoCapturer", "isEqual"]
+- ["C14GuiApplication13VideoCapturer", "isKind"]
+- ["C14GuiApplication13VideoCapturer", "isKindOfClass"]
+- ["C14GuiApplication13VideoCapturer", "isMember"]
+- ["C14GuiApplication13VideoCapturer", "isMemberOfClass"]
+- ["C14GuiApplication13VideoCapturer", "isProxy"]
+- !private ["C14GuiApplication13VideoCapturer", "kCVPixelBufferPixelFormatTypeKey"]
+- !private ["C14GuiApplication13VideoCapturer", "kCVPixelFormatType_32BGRA"]
+- ["C14GuiApplication13VideoCapturer", "perform"]
+- ["C14GuiApplication13VideoCapturer", "performSelector"]
+- ["C14GuiApplication13VideoCapturer", "release"]
+- ["C14GuiApplication13VideoCapturer", "responds"]
+- ["C14GuiApplication13VideoCapturer", "respondsToSelector"]
+- ["C14GuiApplication13VideoCapturer", "retain"]
+- ["C14GuiApplication13VideoCapturer", "retainCount"]
+- ["C14GuiApplication13VideoCapturer", "self"]
+- ["C14GuiApplication13VideoCapturer", "startSession"]
+- ["C14GuiApplication13VideoCapturer", "superclass"]
+- ["C14GuiApplication13VideoCapturer", "zone"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByImageLiteral", "init"]
+- !private ["Ps26_ExpressibleByImageLiteral", "size"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "addInput"]
+- !private ["Ps9_Hashable", "addOutput"]
+- !private ["Ps9_Hashable", "alwaysDiscardsLateVideoFrames"]
+- !private ["Ps9_Hashable", "async"]
+- !private ["Ps9_Hashable", "beginConfiguration"]
+- !private ["Ps9_Hashable", "canAddInput"]
+- !private ["Ps9_Hashable", "canAddOutput"]
+- !private ["Ps9_Hashable", "commitConfiguration"]
+- ["Ps9_Hashable", "defaultDevice"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "localizedDescription"]
+- !private ["Ps9_Hashable", "main"]
+- !private ["Ps9_Hashable", "noneSkipFirst"]
+- !private ["Ps9_Hashable", "rawValue"]
+- !private ["Ps9_Hashable", "sessionPreset"]
+- !private ["Ps9_Hashable", "setSampleBufferDelegate"]
+- !private ["Ps9_Hashable", "size"]
+- !private ["Ps9_Hashable", "startRunning"]
+- !private ["Ps9_Hashable", "videoSettings"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "width"]
+depends-nominal:
+- "CSo15AVCaptureDevice"
+- "CSo20AVCaptureDeviceInput"
+- !private "CSo14AVCaptureInput"
+- !private "CSo15AVCaptureOutput"
+- "CSo16AVCaptureSession"
+- "CSo24AVCaptureVideoDataOutput"
+- "PSo44AVCaptureVideoDataOutputSampleBufferDelegate"
+- "Ps9AnyObject"
+- "Sb"
+- "CSo8CFString"
+- "VSC12CGBitmapInfo"
+- "CSo12CGColorSpace"
+- "CSo9CGContext"
+- "V12CoreGraphics7CGFloat"
+- "CSo7CGImage"
+- "OSC16CGImageAlphaInfo"
+- "VSC6CGSize"
+- "CSo14CMSampleBuffer"
+- "CSo8CVBuffer"
+- "VSC22CVPixelBufferLockFlags"
+- "Ps7CVarArg"
+- !private "Vs9Character"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Vs10Dictionary"
+- !private "CSo14DispatchObject"
+- "CSo13DispatchQueue"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps5Error"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
+- "Ps8Hashable"
+- "SQ"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- "Si"
+- !private "Vs5Int16"
+- "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo7NSError"
+- !private "PSo20NSFetchRequestResult"
+- "CSo7NSImage"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSNumber"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo19NSPasteboardReading"
+- !private "PSo19NSPasteboardWriting"
+- !private "PSo14NSSecureCoding"
+- "CSo8NSString"
+- !private "CSo7NSValue"
+- !private "CSo9OS_object"
+- !private "Ps9OptionSet"
+- "Sq"
+- !private "Ps16RawRepresentable"
+- !private "Ps8Sequence"
+- !private "Ps10SetAlgebra"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "Su"
+- !private "Vs6UInt16"
+- "Vs6UInt32"
+- "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- "C14GuiApplication13VideoCapturer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByImageLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/kbai/Documents/XCodeProjects/CommandLineProjects/Actual/GuiApplication/GuiApplication/GuiApplication-Bridging-Header.h"
+- "/Users/kbai/Documents/XCodeProjects/CommandLineProjects/Actual/GuiApplication/GuiApplication/EyeTracker.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/simd.swiftmodule"
+interface-hash: "8c9221cd19a64581d4e9241f12a93e97"
